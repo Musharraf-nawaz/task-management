@@ -1,0 +1,148 @@
+import type { Task } from './types'
+
+export const mockTasks: Task[] = [
+  {
+    id: 'task-001',
+    title: 'Implement OAuth2 login flow',
+    description:
+      'Add Google and GitHub OAuth providers to the auth service, including callback handling and session token issuance.',
+    priority: 'high',
+    dueDate: '2026-07-10',
+    assignee: 'Sarah Chen',
+    status: 'in-progress',
+    tags: ['auth', 'backend', 'security'],
+    createdAt: '2026-06-20T09:00:00.000Z',
+  },
+  {
+    id: 'task-002',
+    title: 'Fix race condition in checkout cart',
+    description:
+      'Concurrent updates to cart quantity can overwrite line items. Reproduce under load and add optimistic locking.',
+    priority: 'high',
+    dueDate: '2026-07-12',
+    assignee: 'Marcus Thompson',
+    status: 'todo',
+    tags: ['backend', 'bug', 'payments'],
+    createdAt: '2026-06-22T11:30:00.000Z',
+  },
+  {
+    id: 'task-003',
+    title: 'Redesign empty-state illustrations',
+    description:
+      'Replace placeholder SVGs on the projects dashboard with the new illustration set from design handoff.',
+    priority: 'medium',
+    dueDate: '2026-07-25',
+    assignee: 'Elena Volkov',
+    status: 'todo',
+    tags: ['ux', 'frontend'],
+    createdAt: '2026-06-28T14:00:00.000Z',
+  },
+  {
+    id: 'task-004',
+    title: 'Migrate user preferences to Postgres',
+    description:
+      'Move preference documents from Redis hashes into a normalized preferences table with a zero-downtime cutover.',
+    priority: 'high',
+    dueDate: '2026-07-08',
+    assignee: 'Priya Patel',
+    status: 'todo',
+    tags: ['backend', 'migration', 'blocked'],
+    createdAt: '2026-06-15T08:00:00.000Z',
+  },
+  {
+    id: 'task-005',
+    title: 'Write API contract tests for billing',
+    description:
+      'Cover invoice creation, proration, and refund endpoints with Pact contract tests against the billing mock.',
+    priority: 'medium',
+    dueDate: '2026-07-30',
+    assignee: 'James Okonkwo',
+    status: 'in-progress',
+    tags: ['testing', 'backend'],
+    createdAt: '2026-07-01T10:15:00.000Z',
+  },
+  {
+    id: 'task-006',
+    title: 'Ship notification preferences UI',
+    description:
+      'Build the settings panel for email and in-app notification toggles, wired to the preferences API.',
+    priority: 'medium',
+    dueDate: '2026-08-05',
+    assignee: 'Elena Volkov',
+    status: 'todo',
+    tags: ['frontend', 'ux'],
+    createdAt: '2026-07-02T16:45:00.000Z',
+  },
+  {
+    id: 'task-007',
+    title: 'Add rate limiting to public API',
+    description:
+      'Introduce token-bucket rate limits per API key on the gateway. Document limits in the developer portal.',
+    priority: 'low',
+    dueDate: '2026-08-15',
+    assignee: 'Marcus Thompson',
+    status: 'todo',
+    tags: ['backend', 'security'],
+    createdAt: '2026-07-03T09:20:00.000Z',
+  },
+  {
+    id: 'task-008',
+    title: 'Resolve flaky Cypress suite on CI',
+    description:
+      'Dashboard smoke tests fail intermittently on cold starts. Stabilize waits and seed data timing.',
+    priority: 'high',
+    dueDate: '2026-07-14',
+    assignee: 'James Okonkwo',
+    status: 'in-progress',
+    tags: ['testing', 'ci', 'blocked'],
+    createdAt: '2026-06-25T13:00:00.000Z',
+  },
+  {
+    id: 'task-009',
+    title: 'Document webhook retry semantics',
+    description:
+      'Publish developer docs covering retry windows, signature verification, and dead-letter behaviour.',
+    priority: 'low',
+    dueDate: '2026-08-20',
+    assignee: 'Sarah Chen',
+    status: 'done',
+    tags: [],
+    createdAt: '2026-06-10T07:30:00.000Z',
+  },
+  {
+    id: 'task-010',
+    title: 'Audit accessibility on task board',
+    description:
+      'Run axe scans on Kanban interactions, fix focus order for drag handles, and verify colour contrast.',
+    priority: 'low',
+    dueDate: '2026-08-01',
+    assignee: 'Elena Volkov',
+    status: 'done',
+    tags: ['ux', 'a11y'],
+    createdAt: '2026-06-18T12:00:00.000Z',
+  },
+  {
+    id: 'task-011',
+    title: 'Optimise dashboard query performance',
+    description:
+      'The overview endpoint averages 1.8s under production load. Add covering indexes and trim N+1 joins.',
+    priority: 'medium',
+    dueDate: '2026-07-28',
+    assignee: 'Priya Patel',
+    status: 'done',
+    tags: ['backend', 'performance'],
+    createdAt: '2026-06-12T15:40:00.000Z',
+  },
+  {
+    id: 'task-012',
+    title: 'Prototype keyboard shortcuts for board',
+    description:
+      'Explore Cmd+K command palette and arrow-key column navigation before committing to a full shortcut map.',
+    priority: 'low',
+    dueDate: '2026-08-12',
+    assignee: 'Marcus Thompson',
+    status: 'todo',
+    tags: [],
+    createdAt: '2026-07-05T11:00:00.000Z',
+  },
+]
